@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #000;
+    background-color: #000;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style: none;
+}
+
+header{
+    position: relative;
+    display: flex;
+}
+.header_video video{
+    position: absolute;
+    width: 100%;
+}
+header .logo{
+    flex: 3;
+    z-index: 100;
+    padding: 20px;
+    text-align: center;
+}
+header .logo img{
+    border: 5px solid black;
+}
+header .nav{
+    flex: 9;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+header > .nav > li{
+    padding: 20px;
+    z-index: 100;
+}
+header > .nav > li > a{
+    color: #E1E1E1;
+    transition: border-bottom 0.5s;
+}
+header > .nav > li > a:hover{
+    border-bottom: 1px solid #E1E1E1;
+}
+.header_text{
+    position: absolute;
+    top: 250px;
+    left: 350px;
+    text-align: center;
+    line-height: 56px;
+    color: #E1E1E1;
+}
+.header_text > h1{
+    font-size: 48px;
+    font-weight: lighter;
+}
+.header_text > div{
+    font-size: 20px;
+}
+
+/* main */
+.section1{
+    margin-top : 500px;
+    background: rgb(73, 73, 73);
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+.section1_text{
+    flex:1;
+    margin: auto;
+    text-align: right;
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 48px;
+    font-weight: lighter;
+    cursor: pointer;
+    color: #E1E1E1;
+}
+.section1_img{
+    flex:1;
+}
+.section1_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.section2{
+    background: #9bcaca;
+    width: 100%;
+    height: 750px;
+    padding: 40px;
+}
+.title{
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.h2{
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    color: rgb(73, 73, 73);
+}
+.section2 > .stores{
+    display: flex;
+}
+.section2 > .stores > div{
+    flex: 1;
+    padding: 20px;
+    height: 400px;
+    transition: background 0.15s;
+}
+.section2 > .stores > div:not(:last-child){
+    margin-right: 20px;
+}
+.section2 > .stores > div:hover{
+    background: rgb(73, 73, 73);
+}
+
+.section2 > .stores > div > p{
+    font-size: 20px;
+    color: rgb(73, 73, 73);
+    font-weight: lighter;
+}
+.section2 > .stores > div > h3{
+    font-size: 24px;
+    color: rgb(73, 73, 73);
+    font-weight: lighter;
+
+}
+
+.section3{
+    background-image: url(../images/cafe.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    text-align: left;
+    padding-top: 180px;
+    padding-left: 700px;
+}
+.section3 > .title{
+    background-color: rgba(214, 214, 214, 0.7);
+}
+.section3 > h2{
+    padding-bottom: 20px;
+    background-color: rgba(214, 214, 214, 0.7);
+}
+.section3 > p:last-child{
+    color: #389b9b;
+    font-size: 20px;
+    background-color: rgba(214, 214, 214, 0.7);
+}
+
+.section4{
+        background: #000;
+        width: 100%;
+        height: 500px;
+        padding: 40px;
+
+}
+.section4 > .title{
+    color: #9bcaca;
+}
+.section4 > .h2, p{
+    color: #E1E1E1;
+}
+
+.section5 {
+    width: 100%;
+    height: 300px;
+    padding: 40px;
+    display: flex;
+    background: #000;
+    align-items: center;
+}
+.section5 .qna{
+    flex: 9;
+    background-image: url(../images/laptop.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.section5 > .qna > div{
+    margin-left: 80px;
+    cursor: pointer;
+    text-align: center;
+    transition: opacity 0.15s;
+}
+.section5 .qna div:hover{
+    opacity: 0.5;
+}
+.section5 .qna p{
+    color: rgb(73, 73, 73);
+}
+.section5 i{
+    font-size: 50px;
+    color: rgb(73, 73, 73);
+}
+.section5 .sns{
+    flex: 3;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.section5 .sns_container{
+    display: flex;
+}
+.section5 .sns_container:not(:last-child){
+    margin-bottom: 10px;
+}
+.section5 .sns_container div:first-child{
+}
+.section5 .sns_container div:nth-child(2){
+    margin-left: 10px;
+}
+.section5 .sns p:first-child{
+    color: #E1E1E1;
+    font-size: 15px;
+
+}
+.section5 .sns p:nth-child(2){
+    color:rgb(73, 73, 73);
+    font-size: 13px;
+}
+
+footer{
+    margin-top: 100px;
+    padding: 50px;
+    background: rgb(39, 99, 66);
+    display:    flex;
+    justify-content: space-between;
+}
+footer img{
+    object-fit: contain;
+    
+}
+footer .logo_container{
+    display: flex;
+}
